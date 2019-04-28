@@ -12,10 +12,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, PhotoFilterType) {
-    kComic = 1,
+    kOriginal = 1,
+    kInstant,
+    kComic,
     kLineOverlay,
     kSepia,
-    kTonal,
+    kNoir,
     kColorMonochromeBlue,
     kColorMonochromeRed,
     kColorMonochromeGreen
