@@ -96,7 +96,7 @@
 }
 
 - (void)applyInstantFilterToImage:(UIImage*)originalImage withCompletionBlock:(void (^)(UIImage* __nullable image))completionBlock {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         let filter = [CIFilter filterWithName: @"CIPhotoEffectInstant"];
         [filter setValue:[[CIImage alloc] initWithImage:originalImage] forKey:kCIInputImageKey];
         let outputImage = [[UIImage alloc] initWithCIImage:filter.outputImage];;
@@ -107,11 +107,11 @@
 }
 
 - (void)applySepiaFilterToImage:(UIImage*)originalImage withCompletionBlock:(void (^)(UIImage* __nullable image))completionBlock {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        let sepiaFilter = [CIFilter filterWithName: @"CISepiaTone"];
-        [sepiaFilter setValue:[[CIImage alloc] initWithImage:originalImage] forKey:kCIInputImageKey];
-        [sepiaFilter setValue:[NSNumber numberWithDouble:0.9] forKey:kCIInputIntensityKey];
-        let outputImage = [[UIImage alloc] initWithCIImage:sepiaFilter.outputImage];;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        let filter = [CIFilter filterWithName: @"CISepiaTone"];
+        [filter setValue:[[CIImage alloc] initWithImage:originalImage] forKey:kCIInputImageKey];
+        [filter setValue:[NSNumber numberWithDouble:0.9] forKey:kCIInputIntensityKey];
+        let outputImage = [[UIImage alloc] initWithCIImage:filter.outputImage];;
         dispatch_async(dispatch_get_main_queue(), ^{
             completionBlock(outputImage);
         });
@@ -119,10 +119,10 @@
 }
 
 - (void)applyNoirFilterToImage:(UIImage*)originalImage withCompletionBlock:(void (^)(UIImage* __nullable image))completionBlock {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        let tonalFilter = [CIFilter filterWithName: @"CIPhotoEffectNoir"];
-        [tonalFilter setValue:[[CIImage alloc] initWithImage:originalImage] forKey:kCIInputImageKey];
-        let outputImage = [[UIImage alloc] initWithCIImage:tonalFilter.outputImage];;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        let filter = [CIFilter filterWithName: @"CIPhotoEffectNoir"];
+        [filter setValue:[[CIImage alloc] initWithImage:originalImage] forKey:kCIInputImageKey];
+        let outputImage = [[UIImage alloc] initWithCIImage:filter.outputImage];;
         dispatch_async(dispatch_get_main_queue(), ^{
             completionBlock(outputImage);
         });
@@ -130,12 +130,12 @@
 }
 
 - (void)applyColorMonochromeFilterToImage:(UIImage*)originalImage withColor:(CIColor*)color withCompletionBlock:(void (^)(UIImage* __nullable image))completionBlock {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        let tonalFilter = [CIFilter filterWithName: @"CIColorMonochrome"];
-        [tonalFilter setValue:[[CIImage alloc] initWithImage:originalImage] forKey:kCIInputImageKey];
-        [tonalFilter setValue:color forKey:kCIInputColorKey];
-        [tonalFilter setValue:[NSNumber numberWithDouble:0.5] forKey:kCIInputIntensityKey];
-        let outputImage = [[UIImage alloc] initWithCIImage:tonalFilter.outputImage];;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        let filter = [CIFilter filterWithName: @"CIColorMonochrome"];
+        [filter setValue:[[CIImage alloc] initWithImage:originalImage] forKey:kCIInputImageKey];
+        [filter setValue:color forKey:kCIInputColorKey];
+        [filter setValue:[NSNumber numberWithDouble:0.5] forKey:kCIInputIntensityKey];
+        let outputImage = [[UIImage alloc] initWithCIImage:filter.outputImage];;
         dispatch_async(dispatch_get_main_queue(), ^{
             completionBlock(outputImage);
         });
@@ -143,7 +143,7 @@
 }
 
 - (void)applyComicFilterToImage:(UIImage*)originalImage withCompletionBlock:(void (^)(UIImage* __nullable image))completionBlock {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         let filter = [CIFilter filterWithName: @"CIComicEffect"];
         [filter setValue:[[CIImage alloc] initWithImage:originalImage] forKey:kCIInputImageKey];
         let outputImage = [[UIImage alloc] initWithCIImage:filter.outputImage];;
@@ -154,7 +154,7 @@
 }
 
 - (void)applyLineOverlayFilterToImage:(UIImage*)originalImage withCompletionBlock:(void (^)(UIImage* __nullable image))completionBlock {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         let filter = [CIFilter filterWithName: @"CILineOverlay"];
         [filter setValue:[[CIImage alloc] initWithImage:originalImage] forKey:kCIInputImageKey];
         let outputImage = [[UIImage alloc] initWithCIImage:filter.outputImage];;
