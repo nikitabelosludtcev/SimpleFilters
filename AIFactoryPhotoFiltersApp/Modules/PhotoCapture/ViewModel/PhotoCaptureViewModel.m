@@ -1,14 +1,13 @@
 //
-//  AppDelegate.h
+//  PhotoCaptureViewModel.m
 //  AIFactoryPhotoFiltersApp
 //
 //  Created by NIkita on 28/04/2019.
 //  Copyright © 2019 Nikita Belosludtcev. All rights reserved.
 //
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "PhotoCaptureViewModel.h"
 
-@property (strong, nonatomic) UIWindow *window;
+@implementation PhotoCaptureViewModel
 
 @end
-

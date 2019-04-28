@@ -1,14 +1,15 @@
 //
-//  AppDelegate.h
+//  Prefix.pch
 //  AIFactoryPhotoFiltersApp
 //
 //  Created by NIkita on 28/04/2019.
 //  Copyright © 2019 Nikita Belosludtcev. All rights reserved.
 //
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#ifndef Prefix_h
+#define Prefix_h
 
-@property (strong, nonatomic) UIWindow *window;
+#import "AutoType.h"
+#import <UIKit/UIKit.h>
 
-@end
-
+#endif /* Prefix_h */

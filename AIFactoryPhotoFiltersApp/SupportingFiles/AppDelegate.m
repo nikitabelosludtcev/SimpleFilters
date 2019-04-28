@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "AppCoordinator.h"
 
 @interface AppDelegate ()
+
+@property (strong, nonatomic) AppCoordinator *appCoordinator;
 
 @end
 
@@ -16,6 +19,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc] init];
+    [self.window makeKeyAndVisible];
+    
+    self.appCoordinator = [[AppCoordinator alloc] initWithKeyWindow:self.window];
+    [self.appCoordinator strat];
+    
     return YES;
 }
 

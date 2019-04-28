@@ -13,6 +13,33 @@
 		11AF9E712275CCCF00459172 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9E702275CCCF00459172 /* main.m */; };
 		11AF9E7B2275CCCF00459172 /* AIFactoryPhotoFiltersAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9E7A2275CCCF00459172 /* AIFactoryPhotoFiltersAppTests.m */; };
 		11AF9E862275CCCF00459172 /* AIFactoryPhotoFiltersAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9E852275CCCF00459172 /* AIFactoryPhotoFiltersAppUITests.m */; };
+		11AF9EA02275D4CD00459172 /* AppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9E9F2275D4CD00459172 /* AppCoordinator.m */; };
+		11AF9EA12275D4CD00459172 /* AppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9E9F2275D4CD00459172 /* AppCoordinator.m */; };
+		11AF9EA22275D4CD00459172 /* AppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9E9F2275D4CD00459172 /* AppCoordinator.m */; };
+		11AF9EA82275E9F700459172 /* OnboardingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EA72275E9F700459172 /* OnboardingViewModel.m */; };
+		11AF9EA92275E9F700459172 /* OnboardingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EA72275E9F700459172 /* OnboardingViewModel.m */; };
+		11AF9EAA2275E9F700459172 /* OnboardingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EA72275E9F700459172 /* OnboardingViewModel.m */; };
+		11AF9EAF2275EA1A00459172 /* OnboardingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EAE2275EA1A00459172 /* OnboardingVC.m */; };
+		11AF9EB02275EA1A00459172 /* OnboardingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EAE2275EA1A00459172 /* OnboardingVC.m */; };
+		11AF9EB12275EA1A00459172 /* OnboardingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EAE2275EA1A00459172 /* OnboardingVC.m */; };
+		11AF9ECC2275F87F00459172 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AF9ECB2275F87F00459172 /* Onboarding.storyboard */; };
+		11AF9ECD2275F87F00459172 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AF9ECB2275F87F00459172 /* Onboarding.storyboard */; };
+		11AF9ECE2275F87F00459172 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AF9ECB2275F87F00459172 /* Onboarding.storyboard */; };
+		11AF9ED12275FB5200459172 /* PhotoCaptureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9ED02275FB5200459172 /* PhotoCaptureVC.m */; };
+		11AF9ED22275FB5200459172 /* PhotoCaptureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9ED02275FB5200459172 /* PhotoCaptureVC.m */; };
+		11AF9ED32275FB5200459172 /* PhotoCaptureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9ED02275FB5200459172 /* PhotoCaptureVC.m */; };
+		11AF9ED62275FBCF00459172 /* PhotoCaptureViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9ED52275FBCF00459172 /* PhotoCaptureViewModel.m */; };
+		11AF9ED72275FBCF00459172 /* PhotoCaptureViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9ED52275FBCF00459172 /* PhotoCaptureViewModel.m */; };
+		11AF9ED82275FBCF00459172 /* PhotoCaptureViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9ED52275FBCF00459172 /* PhotoCaptureViewModel.m */; };
+		11AF9EDB2275FF0600459172 /* PhotoEditorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EDA2275FF0600459172 /* PhotoEditorViewModel.m */; };
+		11AF9EDC2275FF0600459172 /* PhotoEditorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EDA2275FF0600459172 /* PhotoEditorViewModel.m */; };
+		11AF9EDD2275FF0600459172 /* PhotoEditorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EDA2275FF0600459172 /* PhotoEditorViewModel.m */; };
+		11AF9EE22275FF3000459172 /* PhotoEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AF9EE12275FF2F00459172 /* PhotoEditor.storyboard */; };
+		11AF9EE32275FF3000459172 /* PhotoEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AF9EE12275FF2F00459172 /* PhotoEditor.storyboard */; };
+		11AF9EE42275FF3000459172 /* PhotoEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AF9EE12275FF2F00459172 /* PhotoEditor.storyboard */; };
+		11AF9EE72275FF4500459172 /* PhotoEditorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EE62275FF4500459172 /* PhotoEditorVC.m */; };
+		11AF9EE82275FF4500459172 /* PhotoEditorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EE62275FF4500459172 /* PhotoEditorVC.m */; };
+		11AF9EE92275FF4500459172 /* PhotoEditorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EE62275FF4500459172 /* PhotoEditorVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +64,6 @@
 		11AF9E612275CCCD00459172 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11AF9E622275CCCD00459172 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		11AF9E6A2275CCCF00459172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		11AF9E6D2275CCCF00459172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11AF9E6F2275CCCF00459172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11AF9E702275CCCF00459172 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11AF9E762275CCCF00459172 /* AIFactoryPhotoFiltersAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIFactoryPhotoFiltersAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +72,25 @@
 		11AF9E812275CCCF00459172 /* AIFactoryPhotoFiltersAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIFactoryPhotoFiltersAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11AF9E852275CCCF00459172 /* AIFactoryPhotoFiltersAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIFactoryPhotoFiltersAppUITests.m; sourceTree = "<group>"; };
 		11AF9E872275CCCF00459172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11AF9E9E2275D4CD00459172 /* AppCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCoordinator.h; sourceTree = "<group>"; };
+		11AF9E9F2275D4CD00459172 /* AppCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCoordinator.m; sourceTree = "<group>"; };
+		11AF9EA32275DC8A00459172 /* AutoType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoType.h; sourceTree = "<group>"; };
+		11AF9EA42275DCE700459172 /* AIFactoryPhotoFiltersApp-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AIFactoryPhotoFiltersApp-prefix.pch"; sourceTree = "<group>"; };
+		11AF9EA62275E9F700459172 /* OnboardingViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnboardingViewModel.h; sourceTree = "<group>"; };
+		11AF9EA72275E9F700459172 /* OnboardingViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnboardingViewModel.m; sourceTree = "<group>"; };
+		11AF9EAD2275EA1A00459172 /* OnboardingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnboardingVC.h; sourceTree = "<group>"; };
+		11AF9EAE2275EA1A00459172 /* OnboardingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnboardingVC.m; sourceTree = "<group>"; };
+		11AF9EC92275F81200459172 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11AF9ECB2275F87F00459172 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		11AF9ECF2275FB5200459172 /* PhotoCaptureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCaptureVC.h; sourceTree = "<group>"; };
+		11AF9ED02275FB5200459172 /* PhotoCaptureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCaptureVC.m; sourceTree = "<group>"; };
+		11AF9ED42275FBCF00459172 /* PhotoCaptureViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCaptureViewModel.h; sourceTree = "<group>"; };
+		11AF9ED52275FBCF00459172 /* PhotoCaptureViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCaptureViewModel.m; sourceTree = "<group>"; };
+		11AF9ED92275FF0600459172 /* PhotoEditorViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoEditorViewModel.h; sourceTree = "<group>"; };
+		11AF9EDA2275FF0600459172 /* PhotoEditorViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoEditorViewModel.m; sourceTree = "<group>"; };
+		11AF9EE12275FF2F00459172 /* PhotoEditor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoEditor.storyboard; sourceTree = "<group>"; };
+		11AF9EE52275FF4500459172 /* PhotoEditorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoEditorVC.h; sourceTree = "<group>"; };
+		11AF9EE62275FF4500459172 /* PhotoEditorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoEditorVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +174,7 @@
 				11AF9E702275CCCF00459172 /* main.m */,
 				11AF9E612275CCCD00459172 /* AppDelegate.h */,
 				11AF9E622275CCCD00459172 /* AppDelegate.m */,
+				11AF9EA42275DCE700459172 /* AIFactoryPhotoFiltersApp-prefix.pch */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -136,8 +182,9 @@
 		11AF9E942275D0A300459172 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				11AF9E9D2275D2CD00459172 /* Coordinator */,
 				11AF9E992275D14700459172 /* LaunchScreen */,
+				11AF9E9D2275D2CD00459172 /* Coordinator */,
+				11AF9EA52275E9E400459172 /* Onboarding */,
 				11AF9E972275D10000459172 /* PhotoCapture */,
 				11AF9E982275D10E00459172 /* PhotoEditor */,
 				11AF9E962275D0EF00459172 /* PhotoFilterService */,
@@ -172,6 +219,8 @@
 		11AF9E982275D10E00459172 /* PhotoEditor */ = {
 			isa = PBXGroup;
 			children = (
+				11AF9EDE2275FF0900459172 /* ViewModel */,
+				11AF9EDF2275FF1800459172 /* ViewController */,
 			);
 			path = PhotoEditor;
 			sourceTree = "<group>";
@@ -187,6 +236,7 @@
 		11AF9E9A2275D20B00459172 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				11AF9EA32275DC8A00459172 /* AutoType.h */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -194,6 +244,8 @@
 		11AF9E9B2275D23000459172 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				11AF9ECF2275FB5200459172 /* PhotoCaptureVC.h */,
+				11AF9ED02275FB5200459172 /* PhotoCaptureVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -201,6 +253,8 @@
 		11AF9E9C2275D23700459172 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				11AF9ED42275FBCF00459172 /* PhotoCaptureViewModel.h */,
+				11AF9ED52275FBCF00459172 /* PhotoCaptureViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -208,8 +262,73 @@
 		11AF9E9D2275D2CD00459172 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				11AF9E9E2275D4CD00459172 /* AppCoordinator.h */,
+				11AF9E9F2275D4CD00459172 /* AppCoordinator.m */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		11AF9EA52275E9E400459172 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				11AF9EAB2275E9FA00459172 /* ViewModel */,
+				11AF9EAC2275EA0100459172 /* OnboardingViewController */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		11AF9EAB2275E9FA00459172 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11AF9EA62275E9F700459172 /* OnboardingViewModel.h */,
+				11AF9EA72275E9F700459172 /* OnboardingViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11AF9EAC2275EA0100459172 /* OnboardingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				11AF9EB22275EA1E00459172 /* Interface */,
+				11AF9EAD2275EA1A00459172 /* OnboardingVC.h */,
+				11AF9EAE2275EA1A00459172 /* OnboardingVC.m */,
+			);
+			path = OnboardingViewController;
+			sourceTree = "<group>";
+		};
+		11AF9EB22275EA1E00459172 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				11AF9ECB2275F87F00459172 /* Onboarding.storyboard */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		11AF9EDE2275FF0900459172 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11AF9ED92275FF0600459172 /* PhotoEditorViewModel.h */,
+				11AF9EDA2275FF0600459172 /* PhotoEditorViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11AF9EDF2275FF1800459172 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				11AF9EE02275FF2100459172 /* Interface */,
+				11AF9EE52275FF4500459172 /* PhotoEditorVC.h */,
+				11AF9EE62275FF4500459172 /* PhotoEditorVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		11AF9EE02275FF2100459172 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				11AF9EE12275FF2F00459172 /* PhotoEditor.storyboard */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,8 +414,8 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = 11AF9E552275CCCD00459172;
 			productRefGroup = 11AF9E5F2275CCCD00459172 /* Products */;
@@ -315,7 +434,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AF9ECC2275F87F00459172 /* Onboarding.storyboard in Resources */,
 				11AF9E6E2275CCCF00459172 /* LaunchScreen.storyboard in Resources */,
+				11AF9EE22275FF3000459172 /* PhotoEditor.storyboard in Resources */,
 				11AF9E6B2275CCCF00459172 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +445,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AF9EE32275FF3000459172 /* PhotoEditor.storyboard in Resources */,
+				11AF9ECD2275F87F00459172 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +454,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AF9EE42275FF3000459172 /* PhotoEditor.storyboard in Resources */,
+				11AF9ECE2275F87F00459172 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,8 +466,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AF9EA02275D4CD00459172 /* AppCoordinator.m in Sources */,
+				11AF9ED12275FB5200459172 /* PhotoCaptureVC.m in Sources */,
+				11AF9EE72275FF4500459172 /* PhotoEditorVC.m in Sources */,
 				11AF9E712275CCCF00459172 /* main.m in Sources */,
 				11AF9E632275CCCD00459172 /* AppDelegate.m in Sources */,
+				11AF9ED62275FBCF00459172 /* PhotoCaptureViewModel.m in Sources */,
+				11AF9EA82275E9F700459172 /* OnboardingViewModel.m in Sources */,
+				11AF9EDB2275FF0600459172 /* PhotoEditorViewModel.m in Sources */,
+				11AF9EAF2275EA1A00459172 /* OnboardingVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +482,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AF9EA12275D4CD00459172 /* AppCoordinator.m in Sources */,
+				11AF9EB02275EA1A00459172 /* OnboardingVC.m in Sources */,
+				11AF9ED72275FBCF00459172 /* PhotoCaptureViewModel.m in Sources */,
 				11AF9E7B2275CCCF00459172 /* AIFactoryPhotoFiltersAppTests.m in Sources */,
+				11AF9EE82275FF4500459172 /* PhotoEditorVC.m in Sources */,
+				11AF9EA92275E9F700459172 /* OnboardingViewModel.m in Sources */,
+				11AF9EDC2275FF0600459172 /* PhotoEditorViewModel.m in Sources */,
+				11AF9ED22275FB5200459172 /* PhotoCaptureVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +497,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AF9EA22275D4CD00459172 /* AppCoordinator.m in Sources */,
+				11AF9EB12275EA1A00459172 /* OnboardingVC.m in Sources */,
+				11AF9ED82275FBCF00459172 /* PhotoCaptureViewModel.m in Sources */,
 				11AF9E862275CCCF00459172 /* AIFactoryPhotoFiltersAppUITests.m in Sources */,
+				11AF9EE92275FF4500459172 /* PhotoEditorVC.m in Sources */,
+				11AF9EAA2275E9F700459172 /* OnboardingViewModel.m in Sources */,
+				11AF9EDD2275FF0600459172 /* PhotoEditorViewModel.m in Sources */,
+				11AF9ED32275FB5200459172 /* PhotoCaptureVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +527,7 @@
 		11AF9E6C2275CCCF00459172 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				11AF9E6D2275CCCF00459172 /* Base */,
+				11AF9EC92275F81200459172 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -507,6 +653,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 668FMHVN58;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AIFactoryPhotoFiltersApp/SupportingFiles/AIFactoryPhotoFiltersApp-prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/AIFactoryPhotoFiltersApp/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -524,6 +671,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 668FMHVN58;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AIFactoryPhotoFiltersApp/SupportingFiles/AIFactoryPhotoFiltersApp-prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/AIFactoryPhotoFiltersApp/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
