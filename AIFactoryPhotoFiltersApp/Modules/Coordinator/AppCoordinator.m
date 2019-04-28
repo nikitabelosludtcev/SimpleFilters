@@ -46,7 +46,7 @@
     viewModel.onSelectTakePhoto = ^{
         [weakSelf showPhotoPickerWithType:UIImagePickerControllerSourceTypeCamera];
     };
-    viewModel.onSelectChoosePhotFromGallery = ^{
+    viewModel.onSelectChoosePhotoFromGallery = ^{
         [weakSelf showPhotoPickerWithType:UIImagePickerControllerSourceTypePhotoLibrary];
     };
     let vc = [OnboardingVC instantiate];

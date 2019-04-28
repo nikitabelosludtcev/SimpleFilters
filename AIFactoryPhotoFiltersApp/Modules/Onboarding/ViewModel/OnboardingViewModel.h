@@ -8,9 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface OnboardingViewModel : NSObject
 
-@property (nonatomic, copy, nullable) void (^onSelectTakePhoto)(void);
-@property (nonatomic, copy, nullable) void (^onSelectChoosePhotFromGallery)(void);
+@property (nonatomic, copy) void (^onSelectTakePhoto)(void);
+@property (nonatomic, copy) void (^onSelectChoosePhotoFromGallery)(void);
+@property (nonatomic, copy) void (^onShowMessage)(NSString * _Nullable message);
+
+- (void)didTapTakePhoto;
+- (void)didTapChoosePhoto;
 
 @end
+
+NS_ASSUME_NONNULL_END

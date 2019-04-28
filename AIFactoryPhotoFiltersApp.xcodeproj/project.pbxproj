@@ -53,6 +53,7 @@
 		11AF9F0D2276327800459172 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9F0C2276327800459172 /* UIImage+Extensions.m */; };
 		11AF9F0E2276327800459172 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9F0C2276327800459172 /* UIImage+Extensions.m */; };
 		11AF9F0F2276327800459172 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9F0C2276327800459172 /* UIImage+Extensions.m */; };
+		11AF9F2522764C7900459172 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AF9F2422764C7900459172 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		11AF9EFD227623A800459172 /* FilterButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterButton.m; sourceTree = "<group>"; };
 		11AF9F0B2276327800459172 /* UIImage+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
 		11AF9F0C2276327800459172 /* UIImage+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
+		11AF9F2422764C7900459172 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AF9F2522764C7900459172 /* AVFoundation.framework in Frameworks */,
 				11AF9EF822761DAD00459172 /* CoreImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +374,7 @@
 		11AF9EF622761DAC00459172 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11AF9F2422764C7900459172 /* AVFoundation.framework */,
 				11AF9EF722761DAD00459172 /* CoreImage.framework */,
 			);
 			name = Frameworks;

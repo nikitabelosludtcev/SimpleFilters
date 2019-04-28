@@ -25,14 +25,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    __weak OnboardingVC *weakSelf = self;
+    self.viewModel.onShowMessage = ^(NSString * _Nullable message) {
+        if (message) {
+            let alertController = [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
+            let okAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel handler:nil];
+            [alertController addAction:okAction];
+            [weakSelf presentViewController:alertController animated:true completion:nil];
+        }
+    };
 }
 
 - (IBAction)didTapCameraButton:(UIButton *)sender {
-    self.viewModel.onSelectTakePhoto();
+    [self.viewModel didTapTakePhoto];
 }
 
 - (IBAction)didTapGalleryButton:(UIButton *)sender {
-    self.viewModel.onSelectChoosePhotFromGallery();
+    [self.viewModel didTapChoosePhoto];
 }
 
 @end
