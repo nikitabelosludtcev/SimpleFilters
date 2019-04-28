@@ -40,15 +40,11 @@
         [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [self setTitleShadowColor:[UIColor blackColor] forState:UIControlStateNormal];
         
-        [self setBackgroundImage:viewModel.previewImage forState:UIControlStateNormal];
-        
+        [self setBgImage:viewModel.previewImage];
         __weak FilterButton *weakSelf = self;
         viewModel.didUpdatePreview = ^(UIImage * _Nonnull filterPreviewImage) {
-            NSLog([[NSThread currentThread] description]);
             __strong FilterButton *strongSelf = weakSelf;
-            [strongSelf setBackgroundImage:filterPreviewImage forState:UIControlStateNormal];
-            [strongSelf layoutIfNeeded];
-            [strongSelf.subviews firstObject].contentMode = UIViewContentModeScaleAspectFill;
+            [strongSelf setBgImage:filterPreviewImage];
         };
         [self addTarget:self action:@selector(didTap) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -57,6 +53,12 @@
 
 - (void)didTap {
     self.viewModel.didChooseFilter();
+}
+
+- (void)setBgImage:(UIImage*)image {
+    [self setBackgroundImage:image forState:UIControlStateNormal];
+    [self layoutIfNeeded];
+    [self.subviews firstObject].contentMode = UIViewContentModeScaleAspectFill;
 }
 
 @end

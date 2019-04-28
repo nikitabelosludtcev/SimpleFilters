@@ -214,7 +214,6 @@
 				11AF9EA52275E9E400459172 /* Onboarding */,
 				11AF9E972275D10000459172 /* PhotoCapture */,
 				11AF9E982275D10E00459172 /* PhotoEditor */,
-				11AF9EEA2276168700459172 /* Filters */,
 				11AF9EEB227616A000459172 /* PhotoFilterService */,
 			);
 			path = Modules;
@@ -240,6 +239,7 @@
 		11AF9E982275D10E00459172 /* PhotoEditor */ = {
 			isa = PBXGroup;
 			children = (
+				11AF9EF92276235200459172 /* FilterButton */,
 				11AF9EDE2275FF0900459172 /* ViewModel */,
 				11AF9EDF2275FF1800459172 /* ViewController */,
 			);
@@ -352,14 +352,6 @@
 				11AF9EE12275FF2F00459172 /* PhotoEditor.storyboard */,
 			);
 			path = Interface;
-			sourceTree = "<group>";
-		};
-		11AF9EEA2276168700459172 /* Filters */ = {
-			isa = PBXGroup;
-			children = (
-				11AF9EF92276235200459172 /* FilterButton */,
-			);
-			path = Filters;
 			sourceTree = "<group>";
 		};
 		11AF9EEB227616A000459172 /* PhotoFilterService */ = {

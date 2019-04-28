@@ -53,7 +53,17 @@
 // MARK: - Actions
 
 - (IBAction)didTapShare:(UIBarButtonItem *)sender {
-    
+    NSString * message = @"Check out my cool photo!";
+    UIImage *sharingImage = self.photoImageView.image;
+    //Fix empty CGImage after CIImage filter
+    if (sharingImage.CGImage == nil) {
+        let ciImage = self.photoImageView.image.CIImage;
+        let cgImage = [[CIContext context] createCGImage:ciImage fromRect:ciImage.extent];
+        sharingImage = [UIImage imageWithCGImage:cgImage];
+    }
+    NSArray * shareItems = @[message, sharingImage];
+    UIActivityViewController * shareVC = [[UIActivityViewController alloc] initWithActivityItems:shareItems applicationActivities:nil];
+    [self presentViewController:shareVC animated:YES completion:nil];
 }
 
 @end
