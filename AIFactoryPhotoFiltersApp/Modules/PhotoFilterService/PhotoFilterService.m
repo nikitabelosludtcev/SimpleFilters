@@ -11,43 +11,55 @@
 @implementation PhotoFilterServiceImpl
 
 - (NSArray<NSNumber*>*)avaliableFilters {
-    return @[[NSNumber numberWithInt:kSepiaFilter],
-             [NSNumber numberWithInt:kTonalFilter],
-             [NSNumber numberWithInt:kColorMonochromeBlueFilter],
-             [NSNumber numberWithInt:kColorMonochromeRedFilter],
-             [NSNumber numberWithInt:kColorMonochromeGreenFilter]];
+    return @[[NSNumber numberWithInt:kComic],
+             [NSNumber numberWithInt:kLineOverlay],
+             [NSNumber numberWithInt:kSepia],
+             [NSNumber numberWithInt:kTonal],
+             [NSNumber numberWithInt:kColorMonochromeBlue],
+             [NSNumber numberWithInt:kColorMonochromeRed],
+             [NSNumber numberWithInt:kColorMonochromeGreen]];
 }
 
 - (NSString*)filterNameForType:(PhotoFilterType)filterType {
     switch (filterType) {
-        case kSepiaFilter:
+        case kComic:
+            return @"Comic";
+        case kLineOverlay:
+            return @"Draw";
+        case kSepia:
             return @"Sepia";
-        case kTonalFilter:
+        case kTonal:
             return @"Tonal";
-        case kColorMonochromeBlueFilter:
+        case kColorMonochromeBlue:
             return @"Blue";
-        case kColorMonochromeRedFilter:
+        case kColorMonochromeRed:
             return @"Red";
-        case kColorMonochromeGreenFilter:
+        case kColorMonochromeGreen:
             return @"Green";
     }
 }
 
 - (void)applyFilter:(PhotoFilterType)filterType toImage:(UIImage*)originalImage withCompletionBlock:(void (^)(UIImage* __nullable image))completionBlock {
     switch (filterType) {
-        case kSepiaFilter:
+        case kComic:
+            [self applyComicFilterToImage:originalImage withCompletionBlock:completionBlock];
+            break;
+        case kLineOverlay:
+            [self applyLineOverlayFilterToImage:originalImage withCompletionBlock:completionBlock];
+            break;
+        case kSepia:
             [self applySepiaFilterToImage:originalImage withCompletionBlock:completionBlock];
             break;
-        case kTonalFilter:
+        case kTonal:
             [self applyTonalFilterToImage:originalImage withCompletionBlock:completionBlock];
             break;
-        case kColorMonochromeBlueFilter:
+        case kColorMonochromeBlue:
             [self applyColorMonochromeFilterToImage:originalImage withColor:[CIColor blueColor] withCompletionBlock:completionBlock];
             break;
-        case kColorMonochromeRedFilter:
+        case kColorMonochromeRed:
             [self applyColorMonochromeFilterToImage:originalImage withColor:[CIColor redColor] withCompletionBlock:completionBlock];
             break;
-        case kColorMonochromeGreenFilter:
+        case kColorMonochromeGreen:
             [self applyColorMonochromeFilterToImage:originalImage withColor:[CIColor greenColor] withCompletionBlock:completionBlock];
             break;
     }
@@ -81,6 +93,7 @@
         let tonalFilter = [CIFilter filterWithName: @"CIColorMonochrome"];
         [tonalFilter setValue:[[CIImage alloc] initWithImage:originalImage] forKey:kCIInputImageKey];
         [tonalFilter setValue:color forKey:kCIInputColorKey];
+        [tonalFilter setValue:[NSNumber numberWithDouble:0.5] forKey:kCIInputIntensityKey];
         let outputImage = [[UIImage alloc] initWithCIImage:tonalFilter.outputImage];;
         dispatch_async(dispatch_get_main_queue(), ^{
             completionBlock(outputImage);
@@ -88,5 +101,26 @@
     });
 }
 
+- (void)applyComicFilterToImage:(UIImage*)originalImage withCompletionBlock:(void (^)(UIImage* __nullable image))completionBlock {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        let filter = [CIFilter filterWithName: @"CIComicEffect"];
+        [filter setValue:[[CIImage alloc] initWithImage:originalImage] forKey:kCIInputImageKey];
+        let outputImage = [[UIImage alloc] initWithCIImage:filter.outputImage];;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completionBlock(outputImage);
+        });
+    });
+}
+
+- (void)applyLineOverlayFilterToImage:(UIImage*)originalImage withCompletionBlock:(void (^)(UIImage* __nullable image))completionBlock {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        let filter = [CIFilter filterWithName: @"CILineOverlay"];
+        [filter setValue:[[CIImage alloc] initWithImage:originalImage] forKey:kCIInputImageKey];
+        let outputImage = [[UIImage alloc] initWithCIImage:filter.outputImage];;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completionBlock(outputImage);
+        });
+    });
+}
 
 @end

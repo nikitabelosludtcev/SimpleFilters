@@ -12,11 +12,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, PhotoFilterType) {
-    kSepiaFilter = 1,
-    kTonalFilter = 2,
-    kColorMonochromeBlueFilter = 3,
-    kColorMonochromeRedFilter = 4,
-    kColorMonochromeGreenFilter = 5
+    kComic = 1,
+    kLineOverlay,
+    kSepia,
+    kTonal,
+    kColorMonochromeBlue,
+    kColorMonochromeRed,
+    kColorMonochromeGreen
 };
 
 @protocol PhotoFilterService
