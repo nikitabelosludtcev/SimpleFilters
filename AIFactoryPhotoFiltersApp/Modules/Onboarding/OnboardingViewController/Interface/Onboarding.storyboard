@@ -10,42 +10,69 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--OnboardingVC-->
+        <!--Simple Filters-->
         <scene sceneID="sPh-nY-cts">
             <objects>
-                <viewController storyboardIdentifier="OnboardingVC" id="e12-bt-BtG" customClass="OnboardingVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingVC" title="Simple Filters" id="e12-bt-BtG" customClass="OnboardingVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ICL-A9-zep">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fei-hK-sbc">
-                                <rect key="frame" x="104" y="331" width="46" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Fei-hK-sbc">
+                                <rect key="frame" x="64" y="658" width="286" height="140"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqj-tF-cHO">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="286" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="q4n-cI-OMZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Take Photo">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
-                                            <action selector="didTapCameraButton:" destination="e12-bt-BtG" eventType="touchUpInside" id="fQP-x3-asg"/>
+                                            <action selector="didTapCameraButton:" destination="e12-bt-BtG" eventType="touchUpInside" id="hOK-aC-UNW"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48e-ZX-S9L">
-                                        <rect key="frame" x="0.0" y="30" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcA-sf-fgC">
+                                        <rect key="frame" x="0.0" y="80" width="286" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Nka-uV-r4n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Choose From Gallery">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
-                                            <action selector="didTapGalleryButton:" destination="e12-bt-BtG" eventType="touchUpInside" id="f7O-7p-nGq"/>
+                                            <action selector="didTapGalleryButton:" destination="e12-bt-BtG" eventType="touchUpInside" id="Pv0-bY-HGQ"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="DF4-kG-1jp">
+                                <rect key="frame" x="199" y="440" width="16" height="16"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Fei-hK-sbc" firstAttribute="leading" secondItem="gCt-EE-NuD" secondAttribute="leading" constant="64" id="2Vn-XK-Wfp"/>
+                            <constraint firstItem="DF4-kG-1jp" firstAttribute="centerX" secondItem="ICL-A9-zep" secondAttribute="centerX" id="G4Y-cr-NLP"/>
+                            <constraint firstItem="gCt-EE-NuD" firstAttribute="trailing" secondItem="Fei-hK-sbc" secondAttribute="trailing" constant="64" id="TW8-r1-sEk"/>
+                            <constraint firstItem="DF4-kG-1jp" firstAttribute="centerY" secondItem="ICL-A9-zep" secondAttribute="centerY" id="ldc-TA-wCT"/>
+                            <constraint firstItem="gCt-EE-NuD" firstAttribute="bottom" secondItem="Fei-hK-sbc" secondAttribute="bottom" constant="64" id="rzq-aM-cBN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gCt-EE-NuD"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Simple Filters" id="qWE-Hz-FxR">
+                        <barButtonItem key="backBarButtonItem" title=" " id="4lT-h8-5VN"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="buttonsStackView" destination="Fei-hK-sbc" id="KM1-JM-BgH"/>
                         <outlet property="cameraButton" destination="iqj-tF-cHO" id="weK-3f-vZH"/>
-                        <outlet property="galleryButton" destination="48e-ZX-S9L" id="Kpm-G5-Ihb"/>
+                        <outlet property="galleryButton" destination="fcA-sf-fgC" id="Qlg-zl-myZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aio-EN-vs7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -53,4 +80,7 @@
             <point key="canvasLocation" x="59" y="81"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AppLogo" width="200" height="196"/>
+    </resources>
 </document>

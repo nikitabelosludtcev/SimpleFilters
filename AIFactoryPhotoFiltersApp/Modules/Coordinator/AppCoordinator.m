@@ -41,11 +41,12 @@
 
 - (void)showOnboarding {
     let viewModel = [[OnboardingViewModel alloc] init];
+    __weak AppCoordinator *weakSelf = self;
     viewModel.onSelectTakePhoto = ^{
-        [self showPhotoPickerWithType:UIImagePickerControllerSourceTypeCamera];
+        [weakSelf showPhotoPickerWithType:UIImagePickerControllerSourceTypeCamera];
     };
     viewModel.onSelectChoosePhotFromGallery = ^{
-        [self showPhotoPickerWithType:UIImagePickerControllerSourceTypePhotoLibrary];
+        [weakSelf showPhotoPickerWithType:UIImagePickerControllerSourceTypePhotoLibrary];
     };
     let vc = [OnboardingVC instantiate];
     vc.viewModel = viewModel;
@@ -55,9 +56,10 @@
 
 - (void)showPhotoPickerWithType:(UIImagePickerControllerSourceType)sourceType {
     let viewModel = [[PhotoCaptureViewModel alloc] init];
+    __weak AppCoordinator *weakSelf = self;
     viewModel.onPhotoDidTaken = ^(UIImage *takenPhoto){
-        [self showPhotoEditorWithPhoto:takenPhoto];
-        [self.nvc dismissViewControllerAnimated:YES completion:nil];
+        [weakSelf showPhotoEditorWithPhoto:takenPhoto];
+        [weakSelf.nvc dismissViewControllerAnimated:YES completion:nil];
     };
     let vc = [[PhotoCaptureVC alloc] init];
     vc.viewModel = viewModel;
