@@ -29,9 +29,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.filtersButtonsScrollView.alwaysBounceHorizontal = YES;
+    [self setupUI];
+}
+
+- (void)setupUI {
     self.photoImageView.image = self.viewModel.currentPhoto;
+    
     __weak PhotoEditorVC *weakSelf = self;
+    
     self.viewModel.didUpdatePhoto = ^(UIImage * _Nonnull newImage) {
         weakSelf.photoImageView.image = newImage;
     };

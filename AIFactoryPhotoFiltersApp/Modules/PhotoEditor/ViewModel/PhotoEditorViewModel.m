@@ -31,14 +31,14 @@
             let filterViewModel = [[FilterButtonViewModel alloc] init];
             PhotoFilterType filterType = [filterTypeValue integerValue];
             filterViewModel.filterName = [service filterNameForType:filterType];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [service applyFilter:filterType toImage:previewImage withCompletionBlock:^(UIImage * _Nullable previewImage) {
-                    if (previewImage) {
-                        filterViewModel.previewImage = previewImage;
+            [service applyFilter:filterType toImage:previewImage withCompletionBlock:^(UIImage * _Nullable previewImage) {
+                if (previewImage) {
+                    filterViewModel.previewImage = previewImage;
+                    if (filterViewModel.didUpdatePreview) {
                         filterViewModel.didUpdatePreview(previewImage);
                     }
-                }];
-            });
+                }
+            }];
             [filters addObject:filterViewModel];
             
             __weak PhotoEditorViewModel* weakSelf = self;
@@ -56,12 +56,13 @@
 }
 
 - (UIImage*)previewFromOriginalImage:(UIImage*)image {
+    let previewSize = 120.0;
     let width = image.size.width;
     let height = image.size.height;
     if (height > width) {
-        return [image scaleToSize:CGSizeMake(240, 240.0 * height / width)];
+        return [image scaleToSize:CGSizeMake(previewSize, previewSize * height / width)];
     } else {
-        return [image scaleToSize:CGSizeMake(240 * width / height, height)];
+        return [image scaleToSize:CGSizeMake(previewSize * width / height, previewSize)];
     }
 }
 
