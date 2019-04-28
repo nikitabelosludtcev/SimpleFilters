@@ -8,6 +8,23 @@
 
 #import "PhotoFilterService.h"
 
+@implementation PhotoFilterServiceMock
+
+- (NSArray<NSNumber*>*)avaliableFilters {
+    return @[[NSNumber numberWithInt:kInstant]];
+}
+
+- (NSString*)filterNameForType:(PhotoFilterType)filterType {
+    return @"test";
+}
+
+- (void)applyFilter:(PhotoFilterType)filterType toImage:(UIImage*)originalImage withCompletionBlock:(void (^)(UIImage* __nullable image))completionBlock {
+    completionBlock([UIImage imageNamed:@"AppLogo"]);
+}
+
+@end
+
+
 @implementation PhotoFilterServiceImpl
 
 - (NSArray<NSNumber*>*)avaliableFilters {

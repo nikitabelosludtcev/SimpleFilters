@@ -45,7 +45,10 @@
             filterViewModel.didChooseFilter = ^{
                 [weakSelf.service applyFilter:filterType toImage:takenPhoto withCompletionBlock:^(UIImage * _Nullable editedImage) {
                     if (editedImage) {
-                        weakSelf.didUpdatePhoto(editedImage);
+                        weakSelf.currentPhoto = editedImage;
+                        if (weakSelf.didUpdatePhoto) {
+                            weakSelf.didUpdatePhoto(editedImage);
+                        }
                     }
                 }];
             };

@@ -54,6 +54,7 @@
 		11AF9F0E2276327800459172 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9F0C2276327800459172 /* UIImage+Extensions.m */; };
 		11AF9F0F2276327800459172 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9F0C2276327800459172 /* UIImage+Extensions.m */; };
 		11AF9F2522764C7900459172 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AF9F2422764C7900459172 /* AVFoundation.framework */; };
+		11AF9F302276679B00459172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11AF9E6A2275CCCF00459172 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -513,6 +514,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AF9F302276679B00459172 /* Assets.xcassets in Resources */,
 				11AF9EE32275FF3000459172 /* PhotoEditor.storyboard in Resources */,
 				11AF9ECD2275F87F00459172 /* Onboarding.storyboard in Resources */,
 			);
@@ -769,6 +771,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 668FMHVN58;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AIFactoryPhotoFiltersApp/SupportingFiles/AIFactoryPhotoFiltersApp-prefix.pch";
 				INFOPLIST_FILE = AIFactoryPhotoFiltersAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -788,6 +793,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 668FMHVN58;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AIFactoryPhotoFiltersApp/SupportingFiles/AIFactoryPhotoFiltersApp-prefix.pch";
 				INFOPLIST_FILE = AIFactoryPhotoFiltersAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -806,6 +814,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 668FMHVN58;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AIFactoryPhotoFiltersApp/SupportingFiles/AIFactoryPhotoFiltersApp-prefix.pch";
 				INFOPLIST_FILE = AIFactoryPhotoFiltersAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -824,6 +833,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 668FMHVN58;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AIFactoryPhotoFiltersApp/SupportingFiles/AIFactoryPhotoFiltersApp-prefix.pch";
 				INFOPLIST_FILE = AIFactoryPhotoFiltersAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -35,4 +35,9 @@ typedef NS_ENUM(NSInteger, PhotoFilterType) {
 
 @end
 
+@interface PhotoFilterServiceMock : NSObject <PhotoFilterService>
+
+@end
+
+
 NS_ASSUME_NONNULL_END
