@@ -19,22 +19,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e6w-f5-avQ">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="1LL-Sp-tVG"/>
-                                    <constraint firstAttribute="height" constant="128" id="6RA-ei-PvK"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="108" width="414" height="574"/>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zbW-Wj-fdZ">
+                                <rect key="frame" x="0.0" y="702" width="414" height="140"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="a4M-DW-k4Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJB-gw-TQS">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="Yws-yi-247"/>
+                                                    <constraint firstAttribute="height" constant="120" id="txu-cJ-U58"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="lEo-gh-vVY"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="a4M-DW-k4Z" secondAttribute="bottom" constant="20" id="b6K-dC-FMk"/>
+                                    <constraint firstAttribute="trailing" secondItem="a4M-DW-k4Z" secondAttribute="trailing" id="bQp-6h-UKN"/>
+                                    <constraint firstItem="a4M-DW-k4Z" firstAttribute="top" secondItem="zbW-Wj-fdZ" secondAttribute="top" id="fYL-2R-fhg"/>
+                                    <constraint firstItem="a4M-DW-k4Z" firstAttribute="leading" secondItem="zbW-Wj-fdZ" secondAttribute="leading" id="kTe-Tj-MV1"/>
+                                    <constraint firstAttribute="height" constant="140" id="xu8-1q-nKf"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="e6w-f5-avQ" firstAttribute="centerY" secondItem="g8l-ts-Wow" secondAttribute="centerY" id="Rmt-hN-AR3"/>
-                            <constraint firstItem="e6w-f5-avQ" firstAttribute="centerX" secondItem="g8l-ts-Wow" secondAttribute="centerX" id="jdr-2i-xtO"/>
+                            <constraint firstItem="zbW-Wj-fdZ" firstAttribute="top" secondItem="e6w-f5-avQ" secondAttribute="bottom" constant="20" id="7Sa-xC-1kb"/>
+                            <constraint firstItem="e6w-f5-avQ" firstAttribute="leading" secondItem="fj2-GZ-L3Z" secondAttribute="leading" id="IBE-Na-ovY"/>
+                            <constraint firstItem="e6w-f5-avQ" firstAttribute="top" secondItem="fj2-GZ-L3Z" secondAttribute="top" constant="20" id="XpO-0O-feG"/>
+                            <constraint firstItem="fj2-GZ-L3Z" firstAttribute="trailing" secondItem="e6w-f5-avQ" secondAttribute="trailing" id="d2u-QG-FM0"/>
+                            <constraint firstItem="fj2-GZ-L3Z" firstAttribute="bottom" secondItem="zbW-Wj-fdZ" secondAttribute="bottom" constant="20" id="jWf-Ux-mgK"/>
+                            <constraint firstItem="zbW-Wj-fdZ" firstAttribute="leading" secondItem="fj2-GZ-L3Z" secondAttribute="leading" id="qMR-6v-4Q7"/>
+                            <constraint firstItem="fj2-GZ-L3Z" firstAttribute="trailing" secondItem="zbW-Wj-fdZ" secondAttribute="trailing" id="tLM-Qz-Mye"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fj2-GZ-L3Z"/>
                     </view>
                     <navigationItem key="navigationItem" title="Apply Filters" id="a6W-Yt-SX2">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="action" id="AGW-pu-9mQ">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="action" id="AGW-pu-9mQ">
                             <connections>
                                 <action selector="didTapShare:" destination="wi6-Xv-1Xx" id="VSd-gn-jge"/>
                             </connections>
@@ -42,12 +71,14 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="filtersButtonsScrollView" destination="zbW-Wj-fdZ" id="4i8-Xt-VIX"/>
+                        <outlet property="filtersButtonsStackView" destination="a4M-DW-k4Z" id="bC6-w0-DHm"/>
                         <outlet property="photoImageView" destination="e6w-f5-avQ" id="CMr-95-MPu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vE4-FX-8zp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-51" y="-31"/>
+            <point key="canvasLocation" x="-52.173913043478265" y="-31.473214285714285"/>
         </scene>
     </scenes>
 </document>

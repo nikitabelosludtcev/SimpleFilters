@@ -8,6 +8,7 @@
 
 #import "PhotoCaptureVC.h"
 #import "PhotoCaptureViewModel.h"
+#import "UIImage+Extensions.h"
 
 @interface PhotoCaptureVC ()
 
@@ -17,7 +18,7 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> *)info {
     UIImage *originalImage = [info objectForKey:UIImagePickerControllerOriginalImage];
-    self.viewModel.onPhotoDidTaken(originalImage);
+    self.viewModel.onPhotoDidTaken(originalImage.fixOrientation);
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {

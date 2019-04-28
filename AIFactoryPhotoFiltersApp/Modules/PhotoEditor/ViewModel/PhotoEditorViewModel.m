@@ -7,15 +7,62 @@
 //
 
 #import "PhotoEditorViewModel.h"
+#import "FilterButtonViewModel.h"
+#import "UIImage+Extensions.h"
+
+@interface PhotoEditorViewModel()
+
+@property (nonatomic, strong) id<PhotoFilterService> service;
+
+@end
 
 @implementation PhotoEditorViewModel
 
-- (instancetype)initWithPhoto:(UIImage*)takenPhoto {
+- (instancetype)initWithPhoto:(UIImage*)takenPhoto filterService:(id<PhotoFilterService>) service {
     self = [super init];
     if (self) {
-        self.takenPhoto = takenPhoto;
+        self.currentPhoto = takenPhoto;
+        self.service = service;
+        
+        let previewImage = [self previewFromOriginalImage:takenPhoto];
+        
+        var filters = [NSMutableArray array];
+        [self.service.avaliableFilters enumerateObjectsUsingBlock:^(NSNumber * _Nonnull filterTypeValue, NSUInteger idx, BOOL * _Nonnull stop) {
+            let filterViewModel = [[FilterButtonViewModel alloc] init];
+            PhotoFilterType filterType = [filterTypeValue integerValue];
+            filterViewModel.filterName = [service filterNameForType:filterType];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [service applyFilter:filterType toImage:previewImage withCompletionBlock:^(UIImage * _Nullable previewImage) {
+                    if (previewImage) {
+                        filterViewModel.previewImage = previewImage;
+                        filterViewModel.didUpdatePreview(previewImage);
+                    }
+                }];
+            });
+            [filters addObject:filterViewModel];
+            
+            __weak PhotoEditorViewModel* weakSelf = self;
+            filterViewModel.didChooseFilter = ^{
+                [weakSelf.service applyFilter:filterType toImage:takenPhoto withCompletionBlock:^(UIImage * _Nullable editedImage) {
+                    if (editedImage) {
+                        weakSelf.didUpdatePhoto(editedImage);
+                    }
+                }];
+            };
+        }];
+        self.filters = filters;
     }
     return self;
+}
+
+- (UIImage*)previewFromOriginalImage:(UIImage*)image {
+    let width = image.size.width;
+    let height = image.size.height;
+    if (height > width) {
+        return [image scaleToSize:CGSizeMake(240, 240.0 * height / width)];
+    } else {
+        return [image scaleToSize:CGSizeMake(240 * width / height, height)];
+    }
 }
 
 @end

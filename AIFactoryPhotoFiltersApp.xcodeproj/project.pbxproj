@@ -40,6 +40,19 @@
 		11AF9EE72275FF4500459172 /* PhotoEditorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EE62275FF4500459172 /* PhotoEditorVC.m */; };
 		11AF9EE82275FF4500459172 /* PhotoEditorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EE62275FF4500459172 /* PhotoEditorVC.m */; };
 		11AF9EE92275FF4500459172 /* PhotoEditorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EE62275FF4500459172 /* PhotoEditorVC.m */; };
+		11AF9EEE227616BC00459172 /* PhotoFilterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EED227616BC00459172 /* PhotoFilterService.m */; };
+		11AF9EEF227616BC00459172 /* PhotoFilterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EED227616BC00459172 /* PhotoFilterService.m */; };
+		11AF9EF0227616BC00459172 /* PhotoFilterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EED227616BC00459172 /* PhotoFilterService.m */; };
+		11AF9EF3227616DB00459172 /* FilterButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EF2227616DB00459172 /* FilterButtonViewModel.m */; };
+		11AF9EF4227616DB00459172 /* FilterButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EF2227616DB00459172 /* FilterButtonViewModel.m */; };
+		11AF9EF5227616DB00459172 /* FilterButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EF2227616DB00459172 /* FilterButtonViewModel.m */; };
+		11AF9EF822761DAD00459172 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AF9EF722761DAD00459172 /* CoreImage.framework */; };
+		11AF9EFE227623A800459172 /* FilterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EFD227623A800459172 /* FilterButton.m */; };
+		11AF9EFF227623A800459172 /* FilterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EFD227623A800459172 /* FilterButton.m */; };
+		11AF9F00227623A800459172 /* FilterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9EFD227623A800459172 /* FilterButton.m */; };
+		11AF9F0D2276327800459172 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9F0C2276327800459172 /* UIImage+Extensions.m */; };
+		11AF9F0E2276327800459172 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9F0C2276327800459172 /* UIImage+Extensions.m */; };
+		11AF9F0F2276327800459172 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF9F0C2276327800459172 /* UIImage+Extensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +104,15 @@
 		11AF9EE12275FF2F00459172 /* PhotoEditor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoEditor.storyboard; sourceTree = "<group>"; };
 		11AF9EE52275FF4500459172 /* PhotoEditorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoEditorVC.h; sourceTree = "<group>"; };
 		11AF9EE62275FF4500459172 /* PhotoEditorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoEditorVC.m; sourceTree = "<group>"; };
+		11AF9EEC227616BC00459172 /* PhotoFilterService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoFilterService.h; sourceTree = "<group>"; };
+		11AF9EED227616BC00459172 /* PhotoFilterService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoFilterService.m; sourceTree = "<group>"; };
+		11AF9EF1227616DB00459172 /* FilterButtonViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterButtonViewModel.h; sourceTree = "<group>"; };
+		11AF9EF2227616DB00459172 /* FilterButtonViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterButtonViewModel.m; sourceTree = "<group>"; };
+		11AF9EF722761DAD00459172 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		11AF9EFC227623A800459172 /* FilterButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterButton.h; sourceTree = "<group>"; };
+		11AF9EFD227623A800459172 /* FilterButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterButton.m; sourceTree = "<group>"; };
+		11AF9F0B2276327800459172 /* UIImage+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
+		11AF9F0C2276327800459172 /* UIImage+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AF9EF822761DAD00459172 /* CoreImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +148,7 @@
 				11AF9E792275CCCF00459172 /* AIFactoryPhotoFiltersAppTests */,
 				11AF9E842275CCCF00459172 /* AIFactoryPhotoFiltersAppUITests */,
 				11AF9E5F2275CCCD00459172 /* Products */,
+				11AF9EF622761DAC00459172 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,7 +211,8 @@
 				11AF9EA52275E9E400459172 /* Onboarding */,
 				11AF9E972275D10000459172 /* PhotoCapture */,
 				11AF9E982275D10E00459172 /* PhotoEditor */,
-				11AF9E962275D0EF00459172 /* PhotoFilterService */,
+				11AF9EEA2276168700459172 /* Filters */,
+				11AF9EEB227616A000459172 /* PhotoFilterService */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -198,13 +223,6 @@
 				11AF9E6A2275CCCF00459172 /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		11AF9E962275D0EF00459172 /* PhotoFilterService */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PhotoFilterService;
 			sourceTree = "<group>";
 		};
 		11AF9E972275D10000459172 /* PhotoCapture */ = {
@@ -237,6 +255,8 @@
 			isa = PBXGroup;
 			children = (
 				11AF9EA32275DC8A00459172 /* AutoType.h */,
+				11AF9F0B2276327800459172 /* UIImage+Extensions.h */,
+				11AF9F0C2276327800459172 /* UIImage+Extensions.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -329,6 +349,58 @@
 				11AF9EE12275FF2F00459172 /* PhotoEditor.storyboard */,
 			);
 			path = Interface;
+			sourceTree = "<group>";
+		};
+		11AF9EEA2276168700459172 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				11AF9EF92276235200459172 /* FilterButton */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		11AF9EEB227616A000459172 /* PhotoFilterService */ = {
+			isa = PBXGroup;
+			children = (
+				11AF9EEC227616BC00459172 /* PhotoFilterService.h */,
+				11AF9EED227616BC00459172 /* PhotoFilterService.m */,
+			);
+			path = PhotoFilterService;
+			sourceTree = "<group>";
+		};
+		11AF9EF622761DAC00459172 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11AF9EF722761DAD00459172 /* CoreImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11AF9EF92276235200459172 /* FilterButton */ = {
+			isa = PBXGroup;
+			children = (
+				11AF9EFB2276236A00459172 /* View */,
+				11AF9EFA2276235E00459172 /* ViewModel */,
+			);
+			path = FilterButton;
+			sourceTree = "<group>";
+		};
+		11AF9EFA2276235E00459172 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11AF9EF1227616DB00459172 /* FilterButtonViewModel.h */,
+				11AF9EF2227616DB00459172 /* FilterButtonViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11AF9EFB2276236A00459172 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11AF9EFC227623A800459172 /* FilterButton.h */,
+				11AF9EFD227623A800459172 /* FilterButton.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,12 +538,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AF9EEE227616BC00459172 /* PhotoFilterService.m in Sources */,
 				11AF9EA02275D4CD00459172 /* AppCoordinator.m in Sources */,
 				11AF9ED12275FB5200459172 /* PhotoCaptureVC.m in Sources */,
+				11AF9F0D2276327800459172 /* UIImage+Extensions.m in Sources */,
+				11AF9EFE227623A800459172 /* FilterButton.m in Sources */,
 				11AF9EE72275FF4500459172 /* PhotoEditorVC.m in Sources */,
 				11AF9E712275CCCF00459172 /* main.m in Sources */,
 				11AF9E632275CCCD00459172 /* AppDelegate.m in Sources */,
 				11AF9ED62275FBCF00459172 /* PhotoCaptureViewModel.m in Sources */,
+				11AF9EF3227616DB00459172 /* FilterButtonViewModel.m in Sources */,
 				11AF9EA82275E9F700459172 /* OnboardingViewModel.m in Sources */,
 				11AF9EDB2275FF0600459172 /* PhotoEditorViewModel.m in Sources */,
 				11AF9EAF2275EA1A00459172 /* OnboardingVC.m in Sources */,
@@ -489,7 +565,11 @@
 				11AF9EE82275FF4500459172 /* PhotoEditorVC.m in Sources */,
 				11AF9EA92275E9F700459172 /* OnboardingViewModel.m in Sources */,
 				11AF9EDC2275FF0600459172 /* PhotoEditorViewModel.m in Sources */,
+				11AF9F0E2276327800459172 /* UIImage+Extensions.m in Sources */,
 				11AF9ED22275FB5200459172 /* PhotoCaptureVC.m in Sources */,
+				11AF9EF4227616DB00459172 /* FilterButtonViewModel.m in Sources */,
+				11AF9EEF227616BC00459172 /* PhotoFilterService.m in Sources */,
+				11AF9EFF227623A800459172 /* FilterButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +584,11 @@
 				11AF9EE92275FF4500459172 /* PhotoEditorVC.m in Sources */,
 				11AF9EAA2275E9F700459172 /* OnboardingViewModel.m in Sources */,
 				11AF9EDD2275FF0600459172 /* PhotoEditorViewModel.m in Sources */,
+				11AF9F0F2276327800459172 /* UIImage+Extensions.m in Sources */,
 				11AF9ED32275FB5200459172 /* PhotoCaptureVC.m in Sources */,
+				11AF9EF5227616DB00459172 /* FilterButtonViewModel.m in Sources */,
+				11AF9EF0227616BC00459172 /* PhotoFilterService.m in Sources */,
+				11AF9F00227623A800459172 /* FilterButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,7 @@
 
 #import "PhotoEditorViewModel.h"
 #import "PhotoEditorVC.h"
+#import "PhotoFilterService.h"
 
 @interface AppCoordinator ()
 
@@ -69,7 +70,8 @@
 }
 
 - (void)showPhotoEditorWithPhoto:(UIImage*)takenPhoto {
-    let viewModel = [[PhotoEditorViewModel alloc] initWithPhoto:takenPhoto];
+    let filterService = [[PhotoFilterServiceImpl alloc] init];
+    let viewModel = [[PhotoEditorViewModel alloc] initWithPhoto:takenPhoto filterService:filterService];
     let vc = [PhotoEditorVC instantiate];
     vc.viewModel = viewModel;
     [self.nvc pushViewController:vc animated:FALSE];

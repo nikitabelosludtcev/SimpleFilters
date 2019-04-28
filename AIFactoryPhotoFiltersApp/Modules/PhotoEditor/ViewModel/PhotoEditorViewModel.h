@@ -7,14 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PhotoFilterService.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class FilterButtonViewModel;
+
 @interface PhotoEditorViewModel : NSObject
 
-@property (nonatomic, strong) UIImage* takenPhoto;
+@property (nonatomic, strong) UIImage* currentPhoto;
+@property (nonatomic, strong) NSArray<FilterButtonViewModel*> *filters;
+@property (nonatomic, copy, nullable) void (^didUpdatePhoto)(UIImage *image);
 
-- (instancetype)initWithPhoto:(UIImage*)takenPhoto;
+- (instancetype)initWithPhoto:(UIImage*)takenPhoto filterService:(id<PhotoFilterService>) service;
 
 @end
 
