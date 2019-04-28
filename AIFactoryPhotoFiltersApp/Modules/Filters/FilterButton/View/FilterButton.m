@@ -28,14 +28,27 @@
         
         self.layer.cornerRadius = 10.0;
         self.layer.masksToBounds = YES;
+        self.layer.borderWidth = 1.0;
+        self.layer.borderColor = [UIColor darkGrayColor].CGColor;
         
-        self.imageView.contentMode = UIViewContentModeScaleAspectFill;
+        self.contentMode = UIViewContentModeScaleAspectFill;
         
         [self setTitle:viewModel.filterName forState:UIControlStateNormal];
+        
+        self.titleLabel.shadowOffset = CGSizeMake(2, 2);
+        self.titleLabel.font = [UIFont systemFontOfSize:20.0];
+        [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [self setTitleShadowColor:[UIColor blackColor] forState:UIControlStateNormal];
+        
         [self setBackgroundImage:viewModel.previewImage forState:UIControlStateNormal];
         
+        __weak FilterButton *weakSelf = self;
         viewModel.didUpdatePreview = ^(UIImage * _Nonnull filterPreviewImage) {
-            [self setImage:filterPreviewImage forState:UIControlStateNormal];
+            NSLog([[NSThread currentThread] description]);
+            __strong FilterButton *strongSelf = weakSelf;
+            [strongSelf setBackgroundImage:filterPreviewImage forState:UIControlStateNormal];
+            [strongSelf layoutIfNeeded];
+            [strongSelf.subviews firstObject].contentMode = UIViewContentModeScaleAspectFill;
         };
         [self addTarget:self action:@selector(didTap) forControlEvents:UIControlEventTouchUpInside];
     }
