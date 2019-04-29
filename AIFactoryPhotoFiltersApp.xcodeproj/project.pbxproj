@@ -734,7 +734,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 668FMHVN58;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AIFactoryPhotoFiltersApp/SupportingFiles/AIFactoryPhotoFiltersApp-prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/AIFactoryPhotoFiltersApp/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -752,7 +752,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 668FMHVN58;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AIFactoryPhotoFiltersApp/SupportingFiles/AIFactoryPhotoFiltersApp-prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/AIFactoryPhotoFiltersApp/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -770,7 +770,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 668FMHVN58;
+				DEVELOPMENT_TEAM = "";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AIFactoryPhotoFiltersApp/SupportingFiles/AIFactoryPhotoFiltersApp-prefix.pch";
@@ -792,7 +792,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 668FMHVN58;
+				DEVELOPMENT_TEAM = "";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AIFactoryPhotoFiltersApp/SupportingFiles/AIFactoryPhotoFiltersApp-prefix.pch";
@@ -813,7 +813,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 668FMHVN58;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AIFactoryPhotoFiltersApp/SupportingFiles/AIFactoryPhotoFiltersApp-prefix.pch";
 				INFOPLIST_FILE = AIFactoryPhotoFiltersAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -832,7 +832,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 668FMHVN58;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AIFactoryPhotoFiltersApp/SupportingFiles/AIFactoryPhotoFiltersApp-prefix.pch";
 				INFOPLIST_FILE = AIFactoryPhotoFiltersAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
